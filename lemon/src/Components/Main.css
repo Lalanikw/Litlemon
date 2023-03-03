@@ -1,0 +1,64 @@
+.Main {
+    font:bold;
+    background-color:#495E57 ;
+    margin: 0px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr;
+}
+
+.Main h3 {
+    color:#F4CE14;
+    margin-top: 3px;
+    margin-left: 5px;
+    margin-bottom: 0px;
+}
+.Main h4 {
+    color:white;
+    margin-top: 2px;
+    margin-left: 5px;
+    margin-bottom: 0px;
+}
+
+.Main p {
+    color:white;
+    margin-top: 1px;
+    margin-left: 5px;
+    margin-bottom: 0px;
+    font-size: 0.6em;
+}
+
+.Main button {
+    color: black;
+    width: 10em;
+    font-weight: bold;
+    background-color: #F4CE14;
+    margin-left: 45%;
+    border: none;
+    margin-top: 5px;
+    margin-bottom: 3px;
+    border-radius: 10px;
+    padding-left: 1px;
+    padding-right: 1px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 0.5em;
+}
+
+.Main img {
+    width: 40%;
+    height: auto;
+    margin-left: 50px;
+    margin-top: 10px;
+    margin-bottom: -1vh;
+}
+@media screen and (min-width:768px) {
+    .Main {
+        font:bold;
+        background-color:#495E57 ;
+        margin: 0px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 2fr;
+    }
+}

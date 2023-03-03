@@ -1,0 +1,24 @@
+.Footer {
+    font:bold;
+    margin: 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.Footer h4 {
+    color:#070707;
+    margin: 5px;
+    padding: 5px;
+    margin-bottom: 0px;
+    font-size: 0.7em;
+}
+
+.Footer li {
+    font-size: 0.5em;
+}
+.logo img {
+    width: 30%;
+    height: auto;
+    margin: 20px;
+    padding:0px;
+}
