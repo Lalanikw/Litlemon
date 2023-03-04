@@ -1,27 +1,24 @@
-import React from "react";
-import {Avatar, Heading, VStack } from "@chakra-ui/react";
-import FullScreenSection from "./FullScreenSection";
+import React, {Component} from "react";
+import './Main.css';
+import main from './images/main.jpg'
 
-const title = "Little Lemon";
-const location = "Chicago";
-const Details = "Lorem ipsum, or lipsum as it is sometimes known is dummy text used in laying out print, graphic or web design.";
-
-const Main = () => {
-  return (
-    <div>
-      <FullScreenSection justifyContent="left" alignItems="left" isDarkBackground
-        backgroundColor="495E57">
-        <VStack spacing={4} alignItems="right">
-          <Avatar src="./restauranfood.jpg " size="2xl" name="Food"></Avatar>
-          <Heading as="h4" size="md" onOfLines={1}>{title}</Heading>
-        </VStack>
-        <VStack spacing={4} alignItems="center">
-          <Heading as="h4" size="md" onOfLines={1}>{location}</Heading>
-          <Heading as="h4" size="md" onOfLines={1}>{Details}</Heading>
-        </VStack>
-      </FullScreenSection>
-    </div>
-  );
+class Main extends Component {
+  render() {
+    return (
+      <div className="Main">
+        <div className="Main_left">
+          <h3>Little Lemon</h3>
+          <h4>Chicago</h4>
+          <p>Lorem ipsum, or lipsum as it is sometimes
+            known, is dummy text used in laying out print, graphic or web design.</p>
+          <button>Reserve a Table</button>
+        </div>
+        <div className="Main_right">
+            <img src={main} className="main_image" alt=""></img>
+        </div>
+      </div>
+    );
+  }
 }
 
 export default Main;

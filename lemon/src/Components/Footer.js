@@ -1,46 +1,39 @@
 import React from "react";
-import {Box, Flex, Hstack} from "@chakra-ui/react";
+import "./Footer.css";
+import logo_1 from "./images/logo_1.png"
 
-const Footer = () => {
-  return (
-    <Box backgroundColor="#18181b">
-      <footer>
-        <Flex
-          margin="0 auto"
-          px={12}
-          color="white"
-          justifyContent="center"
-          alignItems="center"
-          maxWidth="1024px"
-          height={16}
-        >
-         <image href=""></image>
-         <Hstack>
-         <ul>
-            <h3> Doormat Navigation</h3>
-            <li href="/Home"> Home</li>
-            <li href="/About"> About</li>
-            <li href="/Menu"> Menu</li>
-            <li href="/Reservation"> Reservation</li>
-            <li href="/Order Online"> Order Online</li>
-            <li href="/Login"> Login</li>
-         </ul>
-         <ul>
-            <h3> Constact</h3>
-            <li> Address</li>
-            <li> Phone Number</li>
-            <li> Email</li>
-         </ul>
-         <ul>
-            <h3> Social Media Links</h3>
-            <li> Facebook</li>
-            <li> Instegram</li>
-            <li> Youtube</li>
-         </ul>
-         </Hstack>
-        </Flex>
-      </footer>
-    </Box>
-  );
+function Footer () {
+    return (
+        <div className="Footer">
+            <div className="logo">
+                <img src={logo_1} alt="" ></img>
+            </div>
+            <div className="Footer_sub" >
+                <h4>Menu Links</h4>
+                <ul>
+                    <li href="#">Home</li>
+                    <li href="#">About</li>
+                    <li href="#">Menu</li>
+                    <li href="#">Login</li>
+                </ul>
+            </div>
+            <div className="Contact" >
+                <h4>ContactUs</h4>
+                <ul>
+                    <li href="#">Address</li>
+                    <li href="#">Phone Number</li>
+                    <li href="#">Email</li>
+                </ul>
+            </div>
+            <div className="Social" >
+                <h4>Social Media</h4>
+                <ul>
+                    <li href="#">Facebook</li>
+                    <li href="#">Instagram</li>
+                    <li href="#">Yuoutube</li>
+                </ul>
+            </div>
+        </div>
+    );
 };
 export default Footer;

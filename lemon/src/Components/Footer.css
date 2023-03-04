@@ -3,22 +3,59 @@
     margin: 0px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: rgb(246, 233, 209);
 }
-
 .Footer h4 {
     color:#070707;
-    margin: 5px;
-    padding: 5px;
-    margin-bottom: 0px;
-    font-size: 0.7em;
+    margin: 3px;
+    padding: 3px;
+    font-size: 0.65em;
+    text-align: center;
 }
-
+.Footer ul {
+    margin:0px;
+}
 .Footer li {
     font-size: 0.5em;
+    text-align: left;
+    list-style: none;
 }
 .logo img {
-    width: 30%;
+    width: 35%;
     height: auto;
     margin: 20px;
     padding:0px;
+}
+@media (min-width:601px) and (max-width:767px) {
+    /*tablet*/
+    .Footer h4 {
+        font-size: 0.9em;
+        text-align: center;
+    }
+    .Footer li {
+        font-size: 0.8em;
+        text-align: left;
+    }
+    .logo img {
+        width: 40%;
+        height: auto;
+        margin: 10px;
+        padding:0px;
+    }
+}
+@media (min-width:768px) {
+    /*desktop*/
+    .Footer h4 {
+        font-size: 1.1em;
+        text-align: left;
+    }
+    .Footer li {
+        font-size: 1em;
+        text-align: left;
+    }
+    .logo img {
+        width: 40%;
+        height: auto;
+        margin: 15px;
+    }
 }

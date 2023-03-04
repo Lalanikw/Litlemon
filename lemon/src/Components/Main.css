@@ -3,12 +3,15 @@
     background-color:#495E57 ;
     margin: 0px;
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 2fr;
+    grid-template-columns: 1fr 1fr;
 }
-
+.Main_left {
+    padding: 1.4vh;
+    margin: 1vh;
+}
 .Main h3 {
     color:#F4CE14;
+    font-weight: bolder;
     margin-top: 3px;
     margin-left: 5px;
     margin-bottom: 0px;
@@ -17,17 +20,16 @@
     color:white;
     margin-top: 2px;
     margin-left: 5px;
-    margin-bottom: 0px;
+    margin-bottom: 5px;
 }
-
 .Main p {
     color:white;
     margin-top: 1px;
     margin-left: 5px;
     margin-bottom: 0px;
     font-size: 0.6em;
+    line-height: 1.5em;
 }
-
 .Main button {
     color: black;
     width: 10em;
@@ -44,21 +46,80 @@
     padding-bottom: 5px;
     font-size: 0.5em;
 }
-
 .Main img {
-    width: 40%;
+    width: 60%;
     height: auto;
-    margin-left: 50px;
+    margin-left: 25px;
+    margin-bottom: -3vh;
     margin-top: 10px;
-    margin-bottom: -1vh;
+    border-radius: 5%;
 }
-@media screen and (min-width:768px) {
-    .Main {
-        font:bold;
-        background-color:#495E57 ;
-        margin: 0px;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 2fr;
+
+@media (min-width:601px) and (max-width:767px) {
+    /*tablet*/
+    .Main_left {
+        padding: 2vh;
+        margin: 1.5vh;
+    }
+    .Main h3 {
+        font-size: 4vh;
+    }
+    .Main h4 {
+        font-size: 3vh;
+        margin-top: 15px;
+        margin-left: 5px;
+        margin-bottom: 15px;
+    }
+    .Main p {
+        font-size: 2vh;
+    }
+    .Main button {
+        width: 10em;
+        font-weight: bolder;
+        font-size: 1.3em;
+        margin-top: 10px;
+    }
+    .Main img {
+        width: 60%;
+        height: auto;
+        margin-left: 60px;
+        margin-bottom: -4vh;
+        margin-top: 15px;
+        border-radius: 10%;
     }
 }
+
+@media (min-width:768px) {
+    /*desktop*/
+    .Main_left {
+        padding: 2vh;
+        margin: 1.5vh;
+    }
+    .Main h3 {
+        font-size: 8vh;
+    }
+    .Main h4 {
+        font-size: 5vh;
+        margin-top: 15px;
+        margin-left: 5px;
+        margin-bottom: 15px;
+    }
+    .Main p {
+        font-size: 4vh;
+    }
+    .Main button {
+        width: 15em;
+        font-weight: bolder;
+        font-size: 1.5em;
+        margin-top: 10px;
+    }
+    .Main img {
+        width: 60%;
+        height: auto;
+        margin-left: 60px;
+        margin-bottom: -4vh;
+        margin-top: 15px;
+        border-radius: 10%;
+    }
+}
+

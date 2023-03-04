@@ -1,56 +1,8 @@
-.container {
+.Container {
+  width: 100vw;
+  height: auto;
   display:grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(9, 100px);
-  justify-content: stretch;
-  align-items: stretch;
-  justify-items: stretch;
-  gap: .5%;
-  margin-top: -2px;
-}
-
-.Header {
-  background-color: aqua;
-  grid-column:1/6;
-  grid-row: 1/2;
-}
-
-.Main {
-  background-color: bisque;
-  grid-column:1/6;
-  grid-row: 2/9;
-}
-
-.Footer {
-  background-color:aquamarine;
-  grid-column:1/6;
-  grid-row-start: 9;
-}
-.Main_section ul {
-  display:grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(7, 105px);
-  margin-top: -2px;
-  list-style: none;
-  margin-left: -40px;
-}
-.Hero {
-  background-color: blue;
-  grid-column: 1/6;
-  grid-row:1/3;
-}
-.Specials {
-  background-color:aqua;
-  grid-column: 1/6;
-  grid-row:3/5;
-}
-.Testimonials {
-  background-color: blue;
-  grid-column: 1/6;
-  grid-row: 5;
-}
-.About {
-  background-color:blueviolet;
-  grid-column: 1/6;
-  grid-row:6/8;
+  grid-template-columns: 1fr;
+  margin: 0px;
+  padding:1px;
 }
