@@ -1,8 +1,209 @@
-.Container {
-  width: 100vw;
+.App {
+  text-align: center;
+  width:100vw;
   height: auto;
+  margin: 0px;
+  padding: 1px;
+}
+
+.Header {
+  display: flex;
+  flex-direction: row;
+}
+.nav-item {
+  text-decoration: none;
+  color: black;
+  font-size: 0.9em;
+  margin-left: 0.3em;
+  margin-top: 1.6em;
+  font-weight: bold;
+}
+
+.Header img {
+  width: 2.8vh;
+  margin: .6em;
+  padding-left: 2.2em;
+}
+/*Hero*/
+.Hero {
+  background-color:#495E57;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.Hero h3 {
+  color:#F4CE14;
+  font-size: 1.5em;
+  margin: 0em;
+  padding-left: 0.8em;
+  padding-top:0.4em;
+}
+.Hero h4{
+  text-align: left;
+  margin: 0em;
+  padding-left:2.8em;
+  color: white;
+}
+.Hero p{
+  font-size: 0.7em;
+  line-height: 1em;
+  color:white;
+  padding-left:2.6em;
+  text-align: justify;
+  margin-left: 1.5em;
+}
+.Hero button {
+  color: black;
+    width: 10em;
+    font-weight: bold;
+    background-color: #F4CE14;
+    margin-left: 45%;
+    border: none;
+    margin-top: 0.5em;
+    margin-bottom: .4em;
+    border-radius: 10px;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    font-size: 0.6em;
+}
+.Hero img {
+  width: 45%;
+  height: auto;
+  margin-left: .5em;
+  margin-bottom: -3vh;
+  margin-top: .5em;
+  border-radius: 5%;
+}
+
+/*Specials*/
+.Specials {
   display:grid;
   grid-template-columns: 1fr;
-  margin: 0px;
-  padding:1px;
+  padding-left:0.5em;
+  margin:0em;
+  background-color: #f8e37d;
+}
+.Specials_title {
+  display:grid;
+  grid-template-columns: 2fr 1fr;
+}
+.Specials button {
+  font-weight: bold;
+  margin-right: 4em;
+  padding: 0em;
+  height: 3em;
+  margin-top: 1em;
+  background-color: #322a04;
+  border: none;
+  border-radius: 20%;
+  color: #f0e5b2;
+  width: 9em;
+}
+
+/*Testimonials*/
+.Testimonials {
+  display:grid;
+  grid-template-columns: 1fr;
+}
+
+/*About*/
+.About {
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media (min-width:600px) and (max-width:768px) {
+  /*medium screens*/
+  .nav-item {
+    font-size: 1.3em;
+    margin-left: 0.7em;
+    margin-top: 1.6em;
+    font-weight: bold;
+  }
+  .Header img {
+    width: 3.0vh;
+    margin: .6em;
+    padding-left: 3.5em;
+  }
+  /*Hero*/
+  .Hero h3 {
+    font-size: 1.8em;
+  }
+  .Hero h4{
+    text-align: left;
+    margin: 0em;
+    padding-left:3.3em;
+    font-size: 1.5em;
+  }
+  .Hero p{
+    font-size: 1.2em;
+    line-height: 1.2em;
+    padding-left:1.6em;
+    margin-left: 2.4em;
+  }
+  .Hero button {
+      font-size: 1em;
+  }
+  .Hero img {
+    margin-bottom: -3vh;
+    margin-top: 1em;
+    margin-right: 2.5em;
+  }
+
+  /*Specials*/
+  .Specials h3 {
+    font-size: 1.5em;
+  }
+}
+
+@media (min-width:769px) {
+    /*larger*/
+  .nav-item {
+    font-size: 1.7em;
+    margin-left: 1.6em;
+    margin-top: 1.6em;
+    font-weight: bold;
+  }
+  .Header img {
+    width: 3.7vh;
+    margin: .6em;
+    padding-left: 11em;
+  }
+    /*Hero*/
+  .Hero h3 {
+    font-size: 3.5em;
+  }
+  .Hero h4{
+    margin: 0em;
+    padding-left:3.3em;
+    font-size: 2.2em;
+  }
+  .Hero p{
+    font-size: 2em;
+    line-height: 1.5em;
+    padding-left:1.4em;
+    margin-left: 2.4em;
+  }
+  .Hero button {
+      font-size: 2em;
+  }
+  .Hero img {
+    margin-bottom: -3vh;
+    margin-top: 2.5em;
+    margin-left: 4em;
+  }
+  /*specials*/
+  .Specials button {
+    margin-right: 4em;
+    padding: 0em;
+    height: 3em;
+    margin-top: 0.5em;
+    width: 12em;
+    font-size: 1.5em;
+  }
+  .Specials h3 {
+    font-size: 2.2em;
+    margin-right:3em;
+    margin-bottom: 0em;
+  }
+
 }

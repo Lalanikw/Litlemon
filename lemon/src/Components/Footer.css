@@ -1,6 +1,7 @@
 .Footer {
     font:bold;
     margin: 0px;
+    padding: 2px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     background-color: rgb(246, 233, 209);
@@ -9,7 +10,7 @@
     color:#070707;
     margin: 3px;
     padding: 3px;
-    font-size: 0.65em;
+    font-size: 0.6em;
     text-align: center;
 }
 .Footer ul {
@@ -23,7 +24,7 @@
 .logo img {
     width: 35%;
     height: auto;
-    margin: 20px;
+    margin: 5px;
     padding:0px;
 }
 @media (min-width:601px) and (max-width:767px) {
