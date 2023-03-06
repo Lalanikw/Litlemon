@@ -75,16 +75,17 @@
 }
 
 /*Specials*/
-.Specials {
-  display:grid;
-  grid-template-columns: 1fr;
-  padding-left:0.5em;
-  margin:0em;
-  background-color: #f8e37d;
-}
 .Specials_title {
   display:grid;
   grid-template-columns: 2fr 1fr;
+}
+.S {
+  display:grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+.S img {
+  width: 15vh;
 }
 .Specials button {
   font-weight: bold;
@@ -100,15 +101,85 @@
 }
 
 /*Testimonials*/
-.Testimonials {
-  display:grid;
-  grid-template-columns: 1fr;
+.T {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.T img {
+  width:10vh;
+  border-radius: 50%;
+}
+
+.Testimonials h4{
+  margin: 0px;
+  font-size: 1.5em;
 }
 
 /*About*/
 .About {
   display:grid;
   grid-template-columns: 1fr 1fr;
+  font:bold;
+  background-color:#495E57;
+}
+.AA h3 {
+  color:#F4CE14;
+  margin: 5px;
+  padding: 5px;
+  margin-bottom: 0px;
+  font-size: 1.5em;
+}
+.About h4 {
+  color:white;
+  margin: 5px;
+  padding: 5px;
+  font-size: 1.0em;
+}
+.About p {
+  color:white;
+  margin-top: 1px;
+  margin-left: 5px;
+  font-size: 0.7em;
+  padding: 10px;
+  text-align: justify;
+}
+.Ab img {
+  width: 50%;
+  margin: 10%;
+  border-radius: 10%;
+  padding-right: 6em;
+}
+
+/*booking */
+
+.booking {
+  background-color:#495E57;
+  padding-top:4em;
+  padding-bottom: 4em;
+  padding-left: 5em;
+  padding-right: 5em;
+  text-align: left;
+  font-size: 1.0em;
+}
+.booking_fields {
+  display: grid;
+}
+.booking label {
+  color: white;
+}
+.booking_fields input {
+  height: 3em;
+}
+.booking_fields select {
+  height: 3em;
+}
+.booking button {
+  background-color: #F4CE14;
+  height: 3em;
+  width: 10em;
+  font-weight: bold;
 }
 
 @media (min-width:600px) and (max-width:768px) {
@@ -150,9 +221,39 @@
   }
 
   /*Specials*/
-  .Specials h3 {
+  .Specials_title {
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+  }
+  .S img {
+    width: 20vh;
+  }
+
+  /*testimonial*/
+
+    /*about*/
+  .AA h3 {
+    font-size: 2em;
+  }
+  .About h4 {
     font-size: 1.5em;
   }
+  .About p {
+    font-size: 1em;
+  }
+  .Ab img {
+    width: 60%;
+  }
+  /*booking */
+
+  .booking button {
+    background-color: #F4CE14;
+    height: 3em;
+    width: 7em;
+    font-weight: bold;
+  }
+
+
 }
 
 @media (min-width:769px) {
@@ -200,10 +301,56 @@
     width: 12em;
     font-size: 1.5em;
   }
-  .Specials h3 {
-    font-size: 2.2em;
-    margin-right:3em;
-    margin-bottom: 0em;
+  .Specials_title {
+    display:grid;
+    grid-template-columns: 2fr 1fr;
   }
+
+  .S img {
+    width: 20vh;
+  }
+  .S {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  /*testimonial */
+  .T {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .T img {
+    width:8vh;
+    border-radius: 50%;
+  }
+
+  .Testimonials h4{
+    margin: 0px;
+    font-size: 2em;
+  }
+
+    /*about*/
+  .AA h3 {
+    font-size: 2.5em;
+  }
+  .About h4 {
+    font-size: 2em;
+  }
+  .About p {
+    font-size: 1.5em;
+  }
+  .Ab img {
+    width: 60%;
+  }
+  /*booking */
+
+  .booking button {
+    height: 4em;
+    width: 8em;
+  }
+
 
 }

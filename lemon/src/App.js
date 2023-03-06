@@ -4,11 +4,13 @@ import Home from "./Components/Home";
 import About from "./Components/About";
 import logo_s from "./Components/images/logo_s.png";
 import Footer from "./Components/Footer.js";
-import { BookingPage } from './Components/BookingPage.js';
+import BookingPage from './Components/BookingForm.js';
 import OrderOnline from './Components/OrderOnline.js';
 import Login from './Components/Login.js';
 
+
 function App() {
+
   return (
     <div className="App">
       <nav className="Header">
@@ -20,7 +22,7 @@ function App() {
         <Link to="./Components/Login.js" className="nav-item">Login</Link>
 
       </nav>
-      <Routes>
+       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/Components/About.js" element={<About />}></Route>
         <Route path="/Components/BookingPage.js" element={<BookingPage />}></Route>
