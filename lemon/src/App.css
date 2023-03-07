@@ -91,13 +91,13 @@
   font-weight: bold;
   margin-right: 4em;
   padding: 0em;
-  height: 3em;
+  height: 2.0em;
   margin-top: 1em;
   background-color: #322a04;
   border: none;
   border-radius: 20%;
   color: #f0e5b2;
-  width: 9em;
+  width: 7em;
 }
 
 /*Testimonials*/
@@ -133,8 +133,8 @@
 }
 .About h4 {
   color:white;
-  margin: 5px;
-  padding: 5px;
+  margin: 3px;
+  padding: 1px;
   font-size: 1.0em;
 }
 .About p {
@@ -142,44 +142,53 @@
   margin-top: 1px;
   margin-left: 5px;
   font-size: 0.7em;
-  padding: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
   text-align: justify;
 }
 .Ab img {
-  width: 50%;
-  margin: 10%;
+  width: 60%;
+  margin: 7%;
   border-radius: 10%;
-  padding-right: 6em;
+  padding-right: 1em;
 }
 
 /*booking */
 
 .booking {
   background-color:#495E57;
-  padding-top:4em;
-  padding-bottom: 4em;
-  padding-left: 5em;
-  padding-right: 5em;
+  padding-top:2em;
+  padding-bottom: 2em;
+  padding-left: 6em;
+  padding-right: 6em;
   text-align: left;
-  font-size: 1.0em;
+  font-size: 1em;
 }
 .booking_fields {
   display: grid;
 }
+.booking h2 {
+  color: wheat;
+  text-align: center;
+  font-size: 1.5em;
+}
 .booking label {
   color: white;
 }
-.booking_fields input {
-  height: 3em;
+.booking_fields input,select {
+  font-size: 0.9em;
+  color:grey;
+  margin: 0.5em;
+  height: 1.5em;
 }
-.booking_fields select {
-  height: 3em;
-}
+
 .booking button {
   background-color: #F4CE14;
   height: 3em;
-  width: 10em;
+  width: 12em;
   font-weight: bold;
+  margin: 1.5em;
+
 }
 
 @media (min-width:600px) and (max-width:768px) {
@@ -240,17 +249,44 @@
   }
   .About p {
     font-size: 1em;
+    padding-left: 30px;
+    padding-right: 30px;
   }
   .Ab img {
     width: 60%;
   }
   /*booking */
 
+  .booking {
+    background-color:#495E57;
+    padding-top:2em;
+    padding-bottom: 2em;
+    padding-left: 5em;
+    padding-right: 5em;
+    text-align: left;
+    font-size: 1.2em;
+  }
+  .booking_fields {
+    display: grid;
+  }
+  .booking label {
+    color: white;
+  }
+  .booking_fields input,select {
+    font-size: 1em;
+    color:grey;
+    margin: 0.7em;
+  }
+  
   .booking button {
     background-color: #F4CE14;
     height: 3em;
-    width: 7em;
+    width: 12em;
     font-weight: bold;
+    margin-left: 5.1em;
+    margin-right: 5.1em;
+    font-size: 1em;
+  
   }
 
 
@@ -267,7 +303,7 @@
   .Header img {
     width: 3.7vh;
     margin: .6em;
-    padding-left: 11em;
+    padding-left: 7em;
   }
     /*Hero*/
   .Hero h3 {
@@ -296,18 +332,21 @@
   .Specials button {
     margin-right: 4em;
     padding: 0em;
-    height: 3em;
+    height: 2.5em;
     margin-top: 0.5em;
-    width: 12em;
-    font-size: 1.5em;
+    width: 8em;
+    font-size: 1em;
   }
+
   .Specials_title {
     display:grid;
     grid-template-columns: 2fr 1fr;
+    font-size: 2em;
   }
 
   .S img {
-    width: 20vh;
+    width: 25vh;
+    padding-top: 1.5em;
   }
   .S {
     display: grid;
@@ -325,11 +364,13 @@
   .T img {
     width:8vh;
     border-radius: 50%;
+    padding-top: 1em;
   }
 
   .Testimonials h4{
     margin: 0px;
     font-size: 2em;
+    padding-top: 1em;
   }
 
     /*about*/
@@ -341,15 +382,43 @@
   }
   .About p {
     font-size: 1.5em;
+    padding-left: 2em;
   }
   .Ab img {
     width: 60%;
   }
   /*booking */
 
+  .booking {
+    background-color:#495E57;
+    padding-top:2em;
+    padding-bottom: 2em;
+    padding-left: 8em;
+    padding-right: 8em;
+    text-align: left;
+    font-size: 1.5em;
+  }
+  .booking_fields {
+    display: grid;
+  }
+  .booking label {
+    color: white;
+  }
+  .booking_fields input,select {
+    font-size: 1em;
+    color:grey;
+    margin: 0.7em;
+  }
+  
   .booking button {
-    height: 4em;
-    width: 8em;
+    background-color: #F4CE14;
+    height: 3em;
+    width: 12em;
+    font-weight: bold;
+    margin-left: 8em;
+    margin-right: 8em;
+    font-size: 1em;
+  
   }
 
 
